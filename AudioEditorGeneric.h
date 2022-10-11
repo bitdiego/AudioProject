@@ -8,10 +8,12 @@ public:
 	typedef std::vector<std::vector<T> > AudioBuffer;
 	AudioEditorGeneric()
 	{
+
 	}
 
 	~AudioEditorGeneric()
 	{
+
 	}
 
 	void SetAudioFileParams(const AudioFile<T>& audioFile);

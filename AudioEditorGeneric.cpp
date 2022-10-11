@@ -3,10 +3,10 @@
 template <class T>
 void AudioEditorGeneric<T>::SetAudioFileParams(const AudioFile<T>& audioFile)
 {
-    this->m_audioFile.setNumChannels(audioFile.getNumChannels());
-    this->m_audioFile.setSampleRate(audioFile.getSampleRate());
-    this->m_audioFile.setBitDepth(audioFile.getBitDepth());
-    m_audioFile.printSummary();
+    /*m_audioFile.setNumChannels(audioFile.getNumChannels());
+    m_audioFile.setSampleRate(audioFile.getSampleRate());
+    m_audioFile.setBitDepth(audioFile.getBitDepth());
+    m_audioFile.printSummary();*/
 }
 
 template <class T>
@@ -23,5 +23,5 @@ void AudioEditorGeneric<T>::SetAudioBuffer(AudioBuffer buffer, double factor)
 template <class T>
 void AudioEditorGeneric<T>::SaveAudioFile(const std::string& path)
 {
-
+    m_audioFile.save(path, AudioFileFormat::Wave);
 }

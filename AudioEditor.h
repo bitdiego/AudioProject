@@ -4,6 +4,8 @@
 class AudioEditor
 {
 public:
+	typedef std::vector<std::vector<double> > AudioBuffer;
+
 	AudioEditor() {
 
 	};
@@ -11,7 +13,7 @@ public:
 
 	};
 	void SetAudioFileParams(const AudioFile<double>& audioFile);
-	void SetAudioBuffer(AudioFile<double>::AudioBuffer buffer, double factor);
+	void SetAudioBuffer(const AudioBuffer& buffer, double factor);
 	void SaveAudioFile(const std::string& path);
 private:
 	AudioFile<double> m_audioFile;

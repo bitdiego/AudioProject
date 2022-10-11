@@ -9,7 +9,7 @@ void AudioEditor::SetAudioFileParams(const AudioFile<double>& audioFile)
     m_audioFile.printSummary();
 }
 
-void AudioEditor::SetAudioBuffer(AudioFile<double>::AudioBuffer buffer, double factor)
+void AudioEditor::SetAudioBuffer(const AudioBuffer& buffer, double factor)
 {
     for (int i = 0; i < m_audioFile.getNumChannels(); i++) {
         for (int j = 0; j < buffer[i].size(); j++) {
