@@ -3,10 +3,10 @@
 template <class T>
 void AudioEditorGeneric<T>::SetAudioFileParams(const AudioFile<T>& audioFile)
 {
-    /*m_audioFile.setNumChannels(audioFile.getNumChannels());
+    m_audioFile.setNumChannels(audioFile.getNumChannels());
     m_audioFile.setSampleRate(audioFile.getSampleRate());
     m_audioFile.setBitDepth(audioFile.getBitDepth());
-    m_audioFile.printSummary();*/
+    m_audioFile.printSummary();
 }
 
 template <class T>
